@@ -15,6 +15,15 @@ header {
   color: white;
 }
 
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+.dark-mode a {
+  color: #85a17c;
+}
+
 .logo {
   height: 40px;
 }
@@ -127,4 +136,14 @@ footer a {
   color: #85a17c;
   text-decoration: none;
   margin: 0 0.5rem;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: underline;
+  margin: 0 0.5rem;
+}
+
+footer nav {
+  margin-top: 0.5rem;
 }
