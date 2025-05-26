@@ -67,17 +67,17 @@
       <p>Sign up to hear when we launch!</p>
       <form name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify-recaptcha="true"
         action="/thank-you.html">
-        <input type="hidden" name="form-name" value="waitlist" />
-      
-        <!-- HONEYPOT FIELD (invisible to real users) -->
-        <input type="hidden" name="form-name" value="waitlist" />
-        <!-- Actual field -->
-        <input type="email" name="email" placeholder="Join the waitlist" required />
-      
-        <!-- reCAPTCHA box -->
-        <div class="g-recaptcha" data-sitekey="6LcaE0orAAAAAKTKyTaW8UK7Q2-mpBrhLEhsncd5"></div>
-      
-        <button type="submit">Notify Me</button>
+          <input type="hidden" name="form-name" value="waitlist" />
+        
+          <p hidden>
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          </p>
+        
+          <input type="email" name="email" placeholder="Join the waitlist" required />
+        
+          <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+        
+          <button type="submit">Notify Me</button>
       </form>
     </section>
   </main>
