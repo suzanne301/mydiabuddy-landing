@@ -10,7 +10,7 @@
     content="My DiaBuddy is an AI-powered diabetes companion helping you track, learn, and thrive." />
   <meta name="keywords" content="diabetes app, insulin tracking, CGM, carb counting, My DiaBuddy" />
   <meta name="author" content="Suzanne Paterson" />
-  
+
   <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="My DiaBuddy – Your Diabetes Co-Pilot" />
   <meta property="og:description" content="It’s great to have a diabuddy. It’s essential to have My DiaBuddy." />
@@ -32,7 +32,8 @@
         <li><a href="#waitlist">Join Waitlist</a></li>
       </ul>
     </nav>
-  <button onclick="toggleTheme()" style="position: fixed; bottom: 1rem; right: 1rem;">🌕</button>  </header>
+    <button onclick="toggleTheme()" style="position: fixed; bottom: 1rem; right: 1rem;">🌕</button>
+  </header>
 
   <main>
     <section class="hero">
@@ -65,9 +66,9 @@
     <section id="waitlist" class="waitlist">
       <h2>Be the First to Know</h2>
       <p>Sign up to hear when we launch!</p>
-      <form name="waitlist-v2" method="POST" data-netlify="true" netlify-recaptcha="true" netlify-honeypot="bot-field">
+      <form name="waitlist-v2" method="POST" data-netlify="true" netlify-recaptcha="true" netlify-honeypot="bot-field"
+        action="/thank-you.html">
         <input type="hidden" name="form-name" value="waitlist-v2" />
-        <input type="hidden" name="success" value="/thank-you.html" />
       
         <!-- Honeypot Field -->
         <p hidden>
@@ -85,29 +86,29 @@
     </section>
   </main>
 
-<footer>
-  <p>&copy; 2025 My DiaBuddy. All rights reserved.</p>
-  <nav class="footer-links">
-    <a href="#">Privacy Policy</a> |
-    <a href="#">Terms of Use</a> |
-    <a href="#">Contact</a>
-  </nav>
-</footer>
-<div id="cookie-banner"
-  style="position: fixed; bottom: 0; width: 100%; background: #333; color: #fff; text-align: center; padding: 1rem; display: none;">
-  This site uses cookies to enhance your experience. <button onclick="acceptCookies()"
-    style="margin-left: 1rem;">OK</button>
-</div>
+  <footer>
+    <p>&copy; 2025 My DiaBuddy. All rights reserved.</p>
+    <nav class="footer-links">
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Use</a> |
+      <a href="#">Contact</a>
+    </nav>
+  </footer>
+  <div id="cookie-banner"
+    style="position: fixed; bottom: 0; width: 100%; background: #333; color: #fff; text-align: center; padding: 1rem; display: none;">
+    This site uses cookies to enhance your experience. <button onclick="acceptCookies()"
+      style="margin-left: 1rem;">OK</button>
+  </div>
 
-<script>
-  function acceptCookies() {
-    document.getElementById('cookie-banner').style.display = 'none';
-    localStorage.setItem('cookieAccepted', 'true');
-  }
-  if (!localStorage.getItem('cookieAccepted')) {
-    document.getElementById('cookie-banner').style.display = 'block';
-  }
-</script>
+  <script>
+    function acceptCookies() {
+      document.getElementById('cookie-banner').style.display = 'none';
+      localStorage.setItem('cookieAccepted', 'true');
+    }
+    if (!localStorage.getItem('cookieAccepted')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+  </script>
 </body>
 <script>
   function toggleTheme() {
@@ -120,4 +121,5 @@
     }
   }
 </script>
+
 </html>
