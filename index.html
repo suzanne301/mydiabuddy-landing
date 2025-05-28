@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My DiaBuddy – Smart Diabetes Support</title>
+
   <!-- SEO Meta Tags -->
   <meta name="description"
     content="My DiaBuddy is an AI-powered diabetes companion helping you track, learn, and thrive." />
@@ -17,14 +18,13 @@
   <meta property="og:image" content="assets/preview.png" />
   <meta property="og:url" content="https://mydiabuddy.co.uk" />
   <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
-    <!-- Netlify hidden form definition -->
-
   <header>
     <img src="assets/logo.png" alt="My DiaBuddy Logo" class="logo" />
     <nav>
@@ -41,23 +41,11 @@
     <section class="hero">
       <div class="hero-text">
         <h1>It's great to have a diabuddy,<br>but it's essential to have <span>My DiaBuddy</span>.</h1>
-        <!-- <p>Your AI-powered diabetes companion – helping you track, learn, and thrive.</p> -->
-        <!-- <a href="#waitlist" class="cta">Join the Waitlist</a> -->
       </div>
       <div class="hero-image">
         <img src="assets/preview.png" alt="My DiaBuddy App Preview" />
       </div>
     </section>
-
-    <!-- <section id="features" class="features">
-      <h2>What My DiaBuddy Can Do</h2>
-      <ul>
-        <li>📸 Estimate carbs using your camera</li>
-        <li>🎙️ Track voice notes around meals & exercise</li>
-        <li>📊 Smart bolus timing with reminders</li>
-        <li>💡 Insights based on your BG patterns</li>
-      </ul>
-    </section> -->
 
     <section id="about" class="about">
       <h2>Designed by People Who Get It</h2>
@@ -71,18 +59,18 @@
       <form name="waitlist-v2" method="POST" data-netlify="true" netlify-recaptcha="true" netlify-honeypot="bot-field"
         action="/thank-you.html">
         <input type="hidden" name="form-name" value="waitlist-v2" />
-      
-        <!-- Honeypot Field -->
+
+        <!-- Honeypot -->
         <p hidden>
           <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
         </p>
-      
+
         <!-- Email -->
         <input type="email" name="email" placeholder="Join the waitlist" required />
-      
+
         <!-- reCAPTCHA -->
         <div class="g-recaptcha" data-sitekey="6LcaE0orAAAAAKTKyTaW8UK7Q2-mpBrhLEhsncd5"></div>
-      
+
         <button type="submit">Notify Me</button>
       </form>
     </section>
@@ -97,10 +85,11 @@
     </nav>
   </footer>
 
+  <!-- Cookie Banner -->
   <div id="cookie-banner"
     style="position: fixed; bottom: 0; width: 100%; background: #333; color: #fff; text-align: center; padding: 1rem; display: none;">
-    This site uses cookies to enhance your experience. <button onclick="acceptCookies()"
-      style="margin-left: 1rem;">OK</button>
+    This site uses cookies to enhance your experience.
+    <button onclick="acceptCookies()" style="margin-left: 1rem;">OK</button>
   </div>
 
   <script>
@@ -112,17 +101,18 @@
       document.getElementById('cookie-banner').style.display = 'block';
     }
   </script>
-</body>
-<script>
-  function toggleTheme() {
-    document.body.classList.toggle('dark-mode');
-    localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-  }
-  window.onload = function () {
-    if (localStorage.getItem('theme') === 'dark') {
-      document.body.classList.add('dark-mode');
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
     }
-  }
-</script>
+    window.onload = function () {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+      }
+    }
+  </script>
+</body>
 
 </html>
