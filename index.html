@@ -94,6 +94,11 @@
       <a href="#">Contact</a>
     </nav>
   </footer>
+  <!-- Hidden form template to trigger Netlify build processing -->
+  <form name="waitlist-v2" netlify netlify-recaptcha="true" netlify-honeypot="bot-field" hidden>
+    <input type="email" name="email" />
+    <div class="g-recaptcha" data-sitekey="6LcaE0orAAAAAKTKyTaW8UK7Q2-mpBrhLEhsncd5"></div>
+  </form>
   <div id="cookie-banner"
     style="position: fixed; bottom: 0; width: 100%; background: #333; color: #fff; text-align: center; padding: 1rem; display: none;">
     This site uses cookies to enhance your experience. <button onclick="acceptCookies()"
