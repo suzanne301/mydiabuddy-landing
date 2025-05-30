@@ -1,4 +1,106 @@
+/* General Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* Main Container */
+main {
+  max-width: 500px;
+  margin: auto;
+  background: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3b5d3b;
+  text-align: center;
+}
+
+/* Paragraph */
+p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Form Labels & Inputs */
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  transition: border 0.3s ease;
+}
+
+input[type="email"]:focus {
+  border-color: #85a17c;
+  outline: none;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #85a17c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #6f8a68;
+}
+
+/* Thank You Page */
+body.thank-you {
+  text-align: center;
+}
+
+body.thank-you a {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #3b5d3b;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+body.thank-you a:hover {
+  color: #5b8c5b;
+}
+
+
+
+
+
+/* body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
@@ -146,4 +248,4 @@ footer a {
 
 footer nav {
   margin-top: 0.5rem;
-}
+} */
