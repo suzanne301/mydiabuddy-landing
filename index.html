@@ -14,9 +14,8 @@
     <h1>Join the Waitlist</h1>
     <p>Be the first to know when we launch My DiaBuddy!</p>
 
-<form name="waitlist-v2" method="POST" netlify netlify-recaptcha="true" netlify-honeypot="bot-field"
-  action="/thank-you.html">
-  <input type="hidden" name="form-name" value="waitlist-v2" />
+<form name="waitlist" method="POST" data-netlify="true" action="thank-you.html">
+  <input type="hidden" name="form-name" value="waitlist" />
   <!-- Honeypot field -->
   <p style="display:none;">
     <label>Don’t fill this out: <input name="bot-field" /></label>
@@ -30,10 +29,10 @@
 </form>
   </main>
     <!-- Hidden clone for Netlify build detection -->
-    <!-- <form name="waitlist" netlify netlify-honeypot="bot-field" hidden>
+    <form name="waitlist" netlify netlify-honeypot="bot-field" hidden>
       <input type="email" name="email" />
       <div data-netlify-recaptcha="true"></div>
-    </form> -->
+    </form>
 </body>
 
 </html>
