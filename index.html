@@ -1,39 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My DiaBuddy – Join the Waitlist</title>
-  <link rel="stylesheet" href="/style.css" />
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DiaBuddy is exploring better ways to reduce the mental load of everyday Type 1 diabetes decisions. Help shape what we build.">
+  <meta name="theme-color" content="#102b26">
+  <meta property="og:title" content="DiaBuddy — Less mental maths. More life.">
+  <meta property="og:description" content="Help shape a more human approach to the everyday mental load of Type 1 diabetes.">
+  <meta property="og:type" content="website"><meta property="og:url" content="https://mydiabuddy.com/">
+  <meta property="og:image" content="https://mydiabuddy.com/assets/preview.png">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="DiaBuddy — Less mental maths. More life.">
+  <meta name="twitter:description" content="Help shape a more human approach to the everyday mental load of Type 1 diabetes."><meta name="twitter:image" content="https://mydiabuddy.com/assets/preview.png">
+  <title>DiaBuddy — Less mental maths. More life.</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <main>
-    <h1>Join the Waitlist</h1>
-    <p>Be the first to know when we launch My DiaBuddy!</p>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#top" aria-label="DiaBuddy home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>DiaBuddy</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Open navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="siteNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#the-problem">The problem</a></li><li class="nav-item"><a class="nav-link" href="#what-were-exploring">What we're exploring</a></li><li class="nav-item"><a class="nav-link" href="#founder">Why DiaBuddy</a></li><li class="nav-item ms-lg-2"><a class="btn btn-brand btn-sm" href="#help-shape">Help shape DiaBuddy</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<form name="waitlist" method="POST" data-netlify="true" action="thank-you.html" netlify>
-  <input type="hidden" name="form-name" value="waitlist" />
-  <!-- Honeypot field -->
-  <!-- <p style="display:none;">
-    <label>Don’t fill this out: <input name="bot-field" /></label>
-  </p> -->
-  <!-- Email field -->
-  <label>Email:
-    <input type="email" name="email" required />
-  </label>
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div><div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="container position-relative"><div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Built with lived experience of Type 1 diabetes</div>
+          <h1>Less mental maths.<br><span>More life.</span></h1>
+          <p class="hero-copy">Type 1 diabetes asks you to make decisions all day, every day—while the factors behind them keep changing. DiaBuddy is exploring how those decisions could feel clearer and less overwhelming.</p>
+          <div class="d-flex flex-column flex-sm-row align-items-sm-center gap-3 hero-actions"><a class="btn btn-brand btn-lg" href="#help-shape">Help shape DiaBuddy <span aria-hidden="true">→</span></a><a class="text-link" href="#the-problem">See the problem we're tackling</a></div>
+          <p class="stage-note"><span aria-hidden="true">◌</span> Early-stage research, shaped with the T1D community</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="decision-orbit" role="img" aria-label="Changing factors including food, glucose, insulin, movement, stress, sleep, illness and hormones surround an everyday diabetes decision">
+            <div class="orbit-ring orbit-ring-one"></div><div class="orbit-ring orbit-ring-two"></div>
+            <div class="decision-core"><span class="core-label">RIGHT NOW</span><strong>What do<br>I do next?</strong><span class="core-pulse"></span></div>
+            <span class="factor factor-food">Food <b>↗</b></span><span class="factor factor-glucose">Glucose <b>6.8</b></span><span class="factor factor-insulin">Insulin <b>1.4u</b></span><span class="factor factor-movement">Movement <b>●</b></span><span class="factor factor-stress">Stress <b>↑</b></span><span class="factor factor-sleep">Sleep <b>6h</b></span><span class="factor factor-illness">Illness <b>?</b></span><span class="factor factor-hormones">Hormones <b>∿</b></span>
+            <div class="orbit-caption"><span></span> The inputs rarely stand still</div>
+          </div>
+        </div>
+      </div></div>
+    </section>
 
-  <!-- Submit button -->
-  <button type="submit">Notify Me</button>
-</form>
+    <section class="signal-strip" aria-label="DiaBuddy principles"><div class="container"><div class="row gy-3 align-items-center text-center text-md-start"><div class="col-md-4 signal-item"><span>01</span><p>Problem-led, not feature-led</p></div><div class="col-md-4 signal-item"><span>02</span><p>Built around real life with T1D</p></div><div class="col-md-4 signal-item"><span>03</span><p>Research before assumptions</p></div></div></div></section>
+
+    <section class="section-space burden-section" id="the-problem"><div class="container">
+      <div class="row g-5 align-items-end section-heading-row"><div class="col-lg-7"><p class="section-kicker">The invisible workload</p><h2>It isn't one calculation.<br>It's a moving system.</h2></div><div class="col-lg-5"><p class="section-intro">A food choice isn't just about carbohydrates. A glucose reading isn't just a number. Each decision sits inside a changing mix of context, timing and lived experience.</p></div></div>
+      <div class="factor-grid">
+        <article class="factor-card factor-card-featured"><div class="factor-icon trend-icon" aria-hidden="true"><span></span><span></span><span></span></div><p class="card-index">01 / GLUCOSE</p><h3>Where it is—and where it might be heading</h3><p>A single reading can mean something different depending on direction, timing and what happened before.</p></article>
+        <article class="factor-card"><div class="factor-icon plate-icon" aria-hidden="true"><span></span></div><p class="card-index">02 / FOOD</p><h3>More than a carb count</h3><p>Portion, composition, timing and uncertainty all join the decision.</p></article>
+        <article class="factor-card factor-card-dark"><div class="factor-icon" aria-hidden="true">◒</div><p class="card-index">03 / INSULIN</p><h3>What is already working?</h3><p>Insulin on board adds another layer to what happens next.</p></article>
+        <article class="factor-card"><div class="factor-icon" aria-hidden="true">±</div><p class="card-index">04 / LIFE</p><h3>The variables that don't fit neatly in a box</h3><p>Movement, sleep, stress, illness and hormones can all shift the picture.</p></article>
+      </div>
+      <div class="burden-statement row align-items-center g-4"><div class="col-lg-4"><p class="statement-label">THE REAL PROBLEM</p></div><div class="col-lg-8"><p>The work doesn't end when a decision is made. It starts again at the next meal, the next reading, the next unexpected change.</p></div></div>
+    </div></section>
+
+    <section class="section-space explore-section" id="what-were-exploring"><div class="container"><div class="explore-panel"><div class="row g-5 align-items-center">
+      <div class="col-lg-6"><p class="section-kicker section-kicker-light">What we're exploring</p><h2>Support that understands the context—not just the number.</h2><p class="explore-copy">DiaBuddy is being shaped as a companion for everyday Type 1 diabetes decisions: a way to bring the factors that matter into one clearer picture and reduce the mental effort of piecing them together.</p><p class="explore-caveat">We are at an early research stage. We are listening first, testing the problem and learning what would genuinely help before making promises about the product.</p><a class="btn btn-light btn-lg" href="#help-shape">Take part in the research <span aria-hidden="true">→</span></a></div>
+      <div class="col-lg-6"><div class="context-stack" aria-label="DiaBuddy's research focus"><div class="context-card context-card-back"><span>03</span><p>Learn from what changes</p></div><div class="context-card context-card-mid"><span>02</span><p>See the wider context</p></div><div class="context-card context-card-front"><span>01</span><p>Make the next decision feel clearer</p><div class="context-line"><i></i><i></i><i></i><i></i><i></i></div></div></div></div>
+    </div></div></div></section>
+
+    <section class="section-space hormones-section"><div class="container"><div class="row align-items-center g-5">
+      <div class="col-lg-5 order-lg-2"><p class="section-kicker">An underexplored variable</p><h2>Hormones can change the rules.</h2><p class="section-intro">Many women report that menstrual cycles, pregnancy, perimenopause and menopause can make glucose patterns and insulin needs feel less predictable.</p><p>We want to understand those experiences better—without assuming every woman is affected in the same way, or pretending the answer is simple.</p><a class="text-link" href="#help-shape">Share your experience <span aria-hidden="true">→</span></a></div>
+      <div class="col-lg-7 order-lg-1"><div class="variability-visual" role="img" aria-label="An abstract chart showing changing and irregular patterns over time"><div class="chart-grid"></div><svg viewBox="0 0 720 300" aria-hidden="true" focusable="false"><defs><linearGradient id="lineGradient" x1="0" x2="1"><stop offset="0" stop-color="#f3b56b"/><stop offset="1" stop-color="#ea7f70"/></linearGradient></defs><path class="chart-shadow" d="M0,214 C58,225 78,179 126,191 S202,246 252,180 S319,82 371,142 S427,227 479,186 S536,84 582,131 S656,245 720,116"/><path class="chart-line" d="M0,214 C58,225 78,179 126,191 S202,246 252,180 S319,82 371,142 S427,227 479,186 S536,84 582,131 S656,245 720,116"/></svg><span class="chart-label chart-label-one">not always predictable</span><span class="chart-label chart-label-two">patterns can shift</span><div class="chart-axis"><span>TIME</span><i></i><span>CHANGE</span></div></div></div>
+    </div></div></section>
+
+    <section class="founder-section" id="founder"><div class="container"><div class="row g-0 founder-card"><div class="col-lg-5 founder-visual"><div class="founder-monogram" aria-hidden="true">SP</div><div class="founder-quote">“I know how much thinking happens between the numbers.”</div></div><div class="col-lg-7 founder-copy"><p class="section-kicker">Why I'm building DiaBuddy</p><h2>Built from lived experience, not from the sidelines.</h2><p>I'm Suzanne, founder of My DiaBuddy, and I live with Type 1 diabetes. I started DiaBuddy because I wanted the kind of support that recognises the full reality of daily decisions—not just isolated data points.</p><p>I don't want to guess what other people need. That's why this stage is about listening: learning where the greatest burden really sits, whose needs are being overlooked and what useful support could look like.</p><p class="founder-signoff">Suzanne <span>Founder, My DiaBuddy</span></p></div></div></div></section>
+
+    <section class="signup-section" id="help-shape"><div class="container"><div class="row g-5 align-items-start">
+      <div class="col-lg-5"><p class="section-kicker section-kicker-light">Help shape DiaBuddy</p><h2>Your experience should influence what gets built.</h2><p>Join the community and choose how you'd like to be involved. No spam, no pressure—and choosing one option does not sign you up for the others.</p><div class="signup-points"><p><span>✓</span> You choose what we contact you about</p><p><span>✓</span> You can change your mind at any time</p><p><span>✓</span> Your details won't be sold</p></div></div>
+      <div class="col-lg-7"><form class="signup-form" name="community" method="POST" action="thank-you.html" data-netlify="true" netlify-honeypot="bot-field" id="communityForm" novalidate>
+        <input type="hidden" name="form-name" value="community"><input type="hidden" name="consent-version" value="2026-10-01"><p class="visually-hidden"><label>Leave this empty if you are human: <input name="bot-field"></label></p>
+        <div class="row g-3"><div class="col-sm-6"><label class="form-label" for="first-name">First name</label><input class="form-control" type="text" id="first-name" name="first-name" autocomplete="given-name"></div><div class="col-sm-6"><label class="form-label" for="email">Email address <span aria-hidden="true">*</span></label><input class="form-control" type="email" id="email" name="email" autocomplete="email" required><div class="invalid-feedback">Please enter a valid email address.</div></div></div>
+        <fieldset class="interest-fieldset"><legend>I'm interested in… <span class="legend-note">Choose at least one</span></legend><div class="interest-options" id="interestOptions">
+          <label class="interest-option" for="updates"><input class="form-check-input interest-check" type="checkbox" id="updates" name="interests" value="Occasional DiaBuddy updates"><span><strong>Occasional updates</strong><small>Thoughtful news about what we're learning and building.</small></span></label>
+          <label class="interest-option" for="beta"><input class="form-check-input interest-check" type="checkbox" id="beta" name="interests" value="Future beta testing"><span><strong>Future beta testing</strong><small>Opportunities to try early ideas and share feedback.</small></span></label>
+          <label class="interest-option" for="research"><input class="form-check-input interest-check" type="checkbox" id="research" name="interests" value="Short research interviews"><span><strong>Short research interviews</strong><small>An invitation to talk about your experience of T1D. Any study will have its own consent step.</small></span></label>
+        </div><p class="interest-error" id="interestError" role="alert">Please choose at least one way to be involved.</p></fieldset>
+        <div class="form-check consent-check"><input class="form-check-input" type="checkbox" id="contact-consent" name="contact-consent" value="I consent to contact for the selected interests" required><label class="form-check-label" for="contact-consent">I agree that My DiaBuddy Ltd can use my details to contact me about the options I've selected. <span aria-hidden="true">*</span></label><div class="invalid-feedback">Please confirm that we can contact you about your selections.</div></div>
+        <button class="btn btn-accent btn-lg w-100" type="submit">Count me in <span aria-hidden="true">→</span></button><p class="privacy-note">We'll use your information only as explained in our <a href="privacy.html">privacy notice</a>. Every update will include a way to unsubscribe. This site is for research participation and product news—not medical advice or emergency support.</p>
+      </form></div>
+    </div></div></section>
   </main>
-    <!-- Hidden clone for Netlify build detection -->
-    <form name="waitlist" netlify netlify-honeypot="bot-field" hidden>
-      <input type="email" name="email" />
-      <div data-netlify-recaptcha="true"></div>
-    </form>
-</body>
 
+  <footer><div class="container"><div class="row align-items-center gy-3"><div class="col-md-5"><a class="footer-brand" href="#top"><span class="brand-mark brand-mark-small" aria-hidden="true"><span></span><span></span><span></span><span></span></span> DiaBuddy</a></div><div class="col-md-4 text-md-center"><p>My DiaBuddy Ltd · United Kingdom</p></div><div class="col-md-3"><div class="footer-links"><a href="privacy.html">Privacy</a><a href="mailto:hello@mydiabuddy.co.uk">Contact</a></div></div></div><div class="footer-bottom"><p>© <span id="year">2026</span> My DiaBuddy Ltd. All rights reserved.</p><p>Made with lived experience.</p></div></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script><script src="script.js"></script>
+</body>
 </html>
